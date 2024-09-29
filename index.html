@@ -29,18 +29,18 @@
             text-align: left;
             padding: 5px 5px;
             border-radius: 10px;
-            z-index: 999; /* Ensure clock is above other elements */
+            z-index: 999;
             transition: all 0.5s ease-in-out;
             animation: slideIn 1s ease-in-out forwards;
-            opacity: 0; /* Initially hidden until animation */
+            opacity: 0;
         }
 
         /* Time and Date Styles */
         #clock, #date {
-            color: #ff9500; /* Theme-matching color */
+            color: #ff9500;
             text-shadow: 0 0 10px rgb(255, 255, 255);
             margin: 0px;
-            font-family: 'Merienda', sans-serif; /* Font matching your theme */
+            font-family: 'Merienda', sans-serif;
         }
 
         #clock {
@@ -100,7 +100,7 @@
         50% { transform: scale(1.2); }
         100% { transform: scale(1); }
     }
-    /* Glow effect for name and education */
+    /* Glow effect */
     .name {
         color: #000; 
         transition: all 0.3s ease-in-out;
@@ -121,7 +121,7 @@
         transition: all 0.3s ease-in-out;
     }
 
-    /* Hover effect to match the theme */
+    /* Hover effect */
     .name:hover {
         color: #ffae00;
         text-shadow: 0 0 20px #ffc16f, 0 0 30px #ffc400;
@@ -172,20 +172,21 @@
   <!-- Audio file -->
   <audio id="myAudio" src="influence.mp3"></audio>
 </div>
-<style>/* Styling for the image container */
+<style>
+/* Styling for the image container */
 .mursalin {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 300px; /* Adjust as needed */
+  width: 300px;
   height: 180px;
   margin: 0 auto;
 }
 
 .mursalin img {
   border-radius: 50%;
-  width: 150px; /* Adjust as needed */
+  width: 150px;
   height: 150px;
   object-fit: cover;
   border: 2px solid rgba(230, 140, 93, 0.5);
@@ -209,7 +210,7 @@
   z-index: 0;
   box-shadow: 0 0 15px rgba(230, 140, 93, 0.5);
   transition: all 0.3s ease-in-out;
-  animation: waveEffect 4s infinite ease-in-out; /* Continuous animation */
+  animation: waveEffect 4s infinite ease-in-out; 
 }
 
 /* Additional circle - hidden by default */
@@ -246,7 +247,7 @@
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.2); /* Grow slightly */
+    transform: translate(-50%, -50%) scale(1.2);
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
@@ -272,7 +273,7 @@
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease, background-color 0.3s ease;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
 }
 
 /* Make play button visible when hovering */
@@ -295,26 +296,25 @@
   function toggleAudio() {
     if (isPlaying) {
       audio.pause();
-      mursalinImage.classList.remove('playing');  // Remove playing class
-      playPauseBtn.innerHTML = '▶';  // Change button to play icon
+      mursalinImage.classList.remove('playing');  
+      playPauseBtn.innerHTML = '▶';  
     } else {
       audio.play();
-      mursalinImage.classList.add('playing');  // Add playing class
-      playPauseBtn.innerHTML = '❚❚';  // Change button to pause icon
+      mursalinImage.classList.add('playing');  
+      playPauseBtn.innerHTML = '❚❚'; 
     }
-    isPlaying = !isPlaying;  // Toggle the play state
+    isPlaying = !isPlaying; 
   }
 
   playPauseBtn.addEventListener('click', (e) => {
-    e.stopPropagation();  // Prevent the event from bubbling up
+    e.stopPropagation(); 
     toggleAudio();
   });
 
   // Stop glowing when audio ends
   audio.addEventListener('ended', function() {
-    mursalinImage.classList.remove('playing');  // Remove playing class when audio ends
-    playPauseBtn.innerHTML = '▶';  // Reset button to play icon
-    isPlaying = false;
+    mursalinImage.classList.remove('playing');  
+    playPauseBtn.innerHTML = '▶';  
   });
 });
 </script><br>
@@ -386,7 +386,7 @@
 .title i {
   margin-right: 10px;
   font-size: 1.5rem;
-  color: #007bff; /* Default color for icons */
+  color: #007bff;
   transition: color 0.3s ease;
 }
 
@@ -395,7 +395,7 @@
 }
 
 .title:hover i {
-  color: #e17055; /* Change color on hover */
+  color: #e17055;
 }
 
 .details {
@@ -407,7 +407,7 @@
 }
 
 .expandable-section.open .details {
-  max-height: 1000px; /* Arbitrary large value to ensure it expands fully */
+  max-height: 1000px; 
   opacity: 1;
   padding: 10px 15px;
   transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
@@ -490,16 +490,16 @@ blockquote {
 <style>
   h2 {
   font-weight: 700;
-  color: #212529; /* dark gray color */
+  color: #212529; 
   margin-bottom: 10px;
 }
 h2:hover {
-  color: #319694; /* blue color on hover */
+  color: #319694; 
 }
 
 p {
   font-size: 18px;
-  color: #495057; /* gray color */
+  color: #495057; 
   margin-bottom: 20px;
 }
 
@@ -511,43 +511,42 @@ ul {
 
 li {
   margin-bottom: 10px;
-  transition: color 0.2s; /* add hover effect */
+  transition: color 0.2s; 
 }
 
 .icon-1 i {
-  color: #007bff; /* blue color */
-}
+  color: #007bff; 
 
 .icon-2 i {
-  color: #6610f2; /* purple color */
+  color: #6610f2; 
 }
 
 .icon-3 i {
-  color: #6f42c1; /* pink color */
+  color: #6f42c1;
 }
 
 .icon-4 i {
-  color: #e83e8c; /* red color */
+  color: #e83e8c;
 }
 
 .icon-1:hover i {
-  color: #0056b3; /* darker blue color on hover */
+  color: #0056b3; 
 }
 
 .icon-2:hover i {
-  color: #5c1ac3; /* darker purple color on hover */
+  color: #5c1ac3; 
 }
 
 .icon-3:hover i {
-  color: #5c1ac3; /* darker pink color on hover */
+  color: #5c1ac3; 
 }
 
 .icon-4:hover i {
-  color: #c51a7a; /* darker red color on hover */
+  color: #c51a7a;
 }
 
 li:hover {
-  color: #337ab7; /* blue color on hover */
+  color: #337ab7; 
 }
 </style>
    <div class="social-buttons">
@@ -653,7 +652,7 @@ li:hover {
 .skill-title i {
   margin-right: 10px;
   font-size: 1.5rem;
-  color: #007bff; /* Default color for icons */
+  color: #007bff; 
   transition: color 0.3s ease;
 }
 
@@ -662,7 +661,7 @@ li:hover {
 }
 
 .skill-title:hover i {
-  color: #e17055; /* Change color on hover */
+  color: #e17055; 
 }
 
 .skill-details {
@@ -674,7 +673,7 @@ li:hover {
 }
 
 .expandable-skill.open .skill-details {
-  max-height: 1000px; /* Arbitrary large value to ensure it expands fully */
+  max-height: 1000px; 
   opacity: 1;
   padding: 10px 15px;
 }
@@ -832,7 +831,7 @@ li:hover {
 .project-title i {
   margin-right: 10px;
   font-size: 1.5rem;
-  color: #007bff; /* Default color for icons */
+  color: #007bff;
   transition: color 0.3s ease;
 }
 
@@ -841,7 +840,7 @@ li:hover {
 }
 
 .project-title:hover i {
-  color: #e17055; /* Change color on hover */
+  color: #e17055;
 }
 
 .project-details {
@@ -853,7 +852,7 @@ li:hover {
 }
 
 .expandable-project.open .project-details {
-  max-height: 1000px; /* Arbitrary large value to ensure it expands fully */
+  max-height: 1000px; 
   opacity: 1;
   padding: 10px 15px;
 }
@@ -1026,7 +1025,7 @@ li:hover {
 .service-title i {
   margin-right: 10px;
   font-size: 1.5rem;
-  color: #007bff; /* Default color for icons */
+  color: #007bff;
   transition: color 0.3s ease;
 }
 
@@ -1035,7 +1034,7 @@ li:hover {
 }
 
 .service-title:hover i {
-  color: #e17055; /* Change color on hover */
+  color: #e17055;
 }
 
 .service-details {
@@ -1047,7 +1046,7 @@ li:hover {
 }
 
 .expandable-service.open .service-details {
-  max-height: 1000px; /* Arbitrary large value to ensure it expands fully */
+  max-height: 1000px;
   opacity: 1;
   padding: 10px 15px;
 }
@@ -1218,8 +1217,7 @@ textarea:focus {
 
 /* Textarea Style */
 textarea {
-    resize: none; /* Disable resizing for consistent layout */
-}
+    resize: none; 
 
 /* Submit Button Styling */
 button.submit-btn {
@@ -1234,7 +1232,7 @@ button.submit-btn {
 
 button.submit-btn:hover {
     background-color: #2980b9;
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    transform: scale(1.05); 
 }
 
 /* Form Message Feedback */
@@ -1280,7 +1278,7 @@ button.submit-btn:hover {
     const submitButton = form.querySelector('button[type="submit"]');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); 
 
         // Disable the submit button and show a sending message
         submitButton.disabled = true;

@@ -29,36 +29,38 @@
   tsParticles.load("particles-js", {
   particles: {
     number: {
-      value: 100, // Adjust the number of particles
+      value: 120, // Adjust the number of particles
       density: {
         enable: true,
         value_area: 800
       }
     },
     color: {
-      value: "#ffffff" // Set the particle color
+      value: ["#ff9500", "#e6b980", "#FF5733"] // Theme-matching colors
     },
     shape: {
-      type: "circle", // Particle shape (circle, edge, triangle, etc.)
+      type: "circle", // Particle shape (circle)
     },
     opacity: {
-      value: 0.5,
-      random: true
+      value: 0.8, // Make particles semi-transparent
+      random: true, // Random opacity for each particle
     },
     size: {
-      value: 5,
+      value: 5, // Adjust particle size
       random: true
     },
-    line_linked: {
-      enable: false // Turn off particle linking
+    shadow: {
+      enable: true,
+      blur: 10, // The blur effect to simulate glow
+      color: "#ff9500" // Glow color matching your theme
     },
     move: {
       enable: true,
-      speed: 2,
-      direction: "none",
+      speed: 2, // Particle speed
+      direction: "none", // Particles move randomly
       random: false,
       straight: false,
-      out_mode: "out",
+      out_mode: "out", // Particles move out of bounds and respawn
       bounce: false
     }
   },
@@ -67,18 +69,17 @@
     events: {
       onhover: {
         enable: true,
-        mode: "grab" // Interaction mode (grab, bubble, repulse, etc.)
+        mode: "repulse" // When hovered, particles are repulsed
       }
     },
     modes: {
-      grab: {
-        distance: 200,
-        line_linked: {
-          opacity: 1
-        }
+      repulse: {
+        distance: 100,
+        duration: 0.4 // Duration of repulsion effect
       }
     }
-  }
+  },
+  retina_detect: true // Adjusts for high-resolution displays
 });
 </script>
     <div class="background">

@@ -14,73 +14,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<style>
-  #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Behind the content */
-}
-</style>
-<script>
-  tsParticles.load("particles-js", {
-  particles: {
-    number: {
-      value: 120, // Adjust the number of particles
-      density: {
-        enable: true,
-        value_area: 800
-      }
-    },
-    color: {
-      value: ["#ff9500", "#e6b980", "#FF5733"] // Theme-matching colors
-    },
-    shape: {
-      type: "circle", // Particle shape (circle)
-    },
-    opacity: {
-      value: 0.8, // Make particles semi-transparent
-      random: true, // Random opacity for each particle
-    },
-    size: {
-      value: 5, // Adjust particle size
-      random: true
-    },
-    shadow: {
-      enable: true,
-      blur: 10, // The blur effect to simulate glow
-      color: "#ff9500" // Glow color matching your theme
-    },
-    move: {
-      enable: true,
-      speed: 2, // Particle speed
-      direction: "none", // Particles move randomly
-      random: false,
-      straight: false,
-      out_mode: "out", // Particles move out of bounds and respawn
-      bounce: false
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
-        enable: true,
-        mode: "repulse" // When hovered, particles are repulsed
-      }
-    },
-    modes: {
-      repulse: {
-        distance: 100,
-        duration: 0.4 // Duration of repulsion effect
-      }
-    }
-  },
-  retina_detect: true // Adjusts for high-resolution displays
-});
-</script>
     <div class="background">
         <div class="fancy-line line1"></div>
         <div class="fancy-line line2"></div>
@@ -232,8 +165,7 @@
         <p><a href="mailto: mdmoursaleinislam276@gmail.com">mdmoursaleinislam276@gmail.com</a></p>
     </div>
 
-    <section id="about" class="glowing-border-box">
-        <div id="particles-js"></div>
+    <section id="about" class="glowing-border-box"><div id="particles-js"></div>
       <h2><u>About Me</u></h2><br><div class="mursalin" id="mursalinImage">
   <img src="main.jpg" alt="MD. Mursalin" loading="lazy">
   <!-- Play/Pause button -->
@@ -633,7 +565,7 @@ li:hover {
     </a>
 </div>
     </section>
-<section id="resume" class="glowing-border-box">
+<section id="resume" class="glowing-border-box"><div id="particles-js"></div>
   <h2><u>Resume</u></h2>
   <h3><u>Skills</u></h3>
 
@@ -823,7 +755,7 @@ li:hover {
 });
   </script>
 </section>
-    <section id="projects" class="glowing-border-box">
+    <section id="projects" class="glowing-border-box"><div id="particles-js"></div>
   <h2><u>Projects</u></h2>
 
   <!-- Personal Portfolio Project -->
@@ -987,7 +919,7 @@ li:hover {
 });
   </script>
 </section>
-<section id="services" class="glowing-border-box">
+<section id="services" class="glowing-border-box"><div id="particles-js"></div>
   <h2><u>Our Services</u></h2>
   <p>We craft your digital presence with precision, from dynamic animations to professional designs. Explore our services below:</p>
 
@@ -1204,7 +1136,7 @@ li:hover {
   </script>
 </section>
     <!-- Contact Section -->
-<section id="contacts" class="glowing-border-box">
+<section id="contacts" class="glowing-border-box"><div id="particles-js"></div>
     <h2><u>Contact Me</u></h2>
     <p>I'm always excited to connect with new people and explore opportunities!</p>
 

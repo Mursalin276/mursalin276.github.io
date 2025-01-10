@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of MD. Mursalin, a web developer and creative designer from Bangladesh. Explore my skills, projects, and services.">
+    <title>mursalin276</title>
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="fancy-line line1"></div>
+        <div class="fancy-line line2"></div>
+        <div class="fancy-line line3"></div>
+        <div class="fancy-line line4"></div>
+        <div class="fancy-line line5"></div>
+    </div>
+     <style>
+        /* Clock Container Styles */
+        .clock-container {
+            position: fixed; 
+            top: 1px;
+            left: 1px;
+            text-align: left;
+            padding: 5px 5px;
+            border-radius: 10px;
+            z-index: 999; 
+            transition: all 0.5s ease-in-out;
+            animation: slideIn 1s ease-in-out forwards;
+            opacity: 0; 
+        }
+
+        /* Time and Date Styles */
+        #clock, #date {
+            color: #ff9500; 
+            text-shadow: 0 0 10px rgb(255, 255, 255);
+            margin: 0px;
+            font-family: 'Merienda', sans-serif; 
+        }
+
+        #clock {
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        #date {
+            font-size: 0.6rem;
+            font-weight: bold;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <div class="clock-container">
+        <h1 id="clock">00:00:00</h1>
+        <h2 id="date">01:01:2024</h2>
+    </div>
+    <br>
+    <div class="content">
+<!-- landing page -->
+<div class="line">Hi, I'm <strong class="name">MD. Mursalin</strong> <i class="fas fa-laptop-code" style="color: #76c893; animation: grow 2s infinite;"></i></div>
+<div class="line">A <i class="fas fa-user-graduate" style="color: #74b9ff; animation: pulse 2s 0.5s infinite;"></i> <strong class="student">Student</strong> living in</div>
+<div class="line"><strong class="location">Tongi, Gazipur, Bangladesh</strong> <i class="fas fa-map-marker-alt" style="color: #ff7675; animation: bounce 2s 1s infinite;"></i> with experience in</div>
+<div class="line"><i class="fas fa-book" style="color: #b15a00; animation: pulse 2s 1.5s infinite;"></i> <strong class="education">Education</strong></div>
+<style>
+    @keyframes grow {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+    .name {
+        color: #000; 
+        transition: all 0.3s ease-in-out;
+    }
+
+    .education {
+        color: #000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .location {
+        color: #000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .student {
+        color: #000; 
+        transition: all 0.3s ease-in-out;
+    }
+
+    .name:hover {
+        color: #ff0000;
+        text-shadow: 0 0 20px #ff6868, 0 0 30px #fa5f5f;
+    }
+
+    .education:hover {
+        color: #ad5c0f;
+        text-shadow: 0 0 20px #f0a94c, 0 0 30px #c06803;
+    }
+
+    .location:hover {
+        color: #ff4800;
+        text-shadow: 0 0 20px #fd6944, 0 0 30px #ff4800;
+    }
+
+    .student:hover {
+        color: #00a2ffe3;
+        text-shadow: 0 0 20px #70eeff, 0 0 30px #00ffff;
+    }
+
+    /* Responsive design */
+    @media only screen and (max-width: 768px) {
+        .line {
+            font-size: 14px;
+        }
+    }
+</style>
+        <div class="enter-button">Enter</div>
+    </div>
+<div class="buttons" style="display: none;">
+    <button data-target="#about" class="btn about-btn"><i class="fas fa-user"></i> About</button>
+    <button data-target="#resume" class="btn resume-btn"><i class="fas fa-file-alt"></i> Resume</button>
+    <button data-target="#projects" class="btn projects-btn"><i class="fas fa-briefcase"></i> Projects</button>
+    <button data-target="#services" class="btn services-btn"><i class="fas fa-concierge-bell"></i> Services</button>
+    <button data-target="#contacts" class="btn contacts-btn"><i class="fas fa-envelope"></i> Contact</button>
+</div>
+    <div class="contact-info" style="display: none;">
+        <p>Say hi anytime :</p>
+        <p><a href="mailto: mdmoursaleinislam276@gmail.com">mdmoursaleinislam276@gmail.com</a></p>
+    </div>
+
+    <section id="about" class="glowing-border-box">
+      <h2><u>About Me</u></h2><br><div class="mursalin" id="mursalinImage">
+  <img src="main.jpg" alt="MD. Mursalin" loading="lazy">
+  <!-- Play/Pause button -->
+  <button id="playPauseBtn" aria-label="Play or pause audio">▶</button>
+  <!-- Audio file -->
+  <audio id="myAudio" src="Dreamlantern.mp3"></audio>
+</div>
+<style>
+.mursalin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px; 
+  height: 180px;
+  margin: 0 auto;
+}
+
+.mursalin img {
+  border-radius: 50%;
+  width: 150px; 
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid rgba(230, 140, 93, 0.5);
+  box-shadow: 0 0 10px rgba(230, 140, 93, 0.5);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.mursalin::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 4px solid rgba(230, 140, 93, 0.5);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  box-shadow: 0 0 15px rgba(230, 140, 93, 0.5);
+  transition: all 0.3s ease-in-out;
+  animation: waveEffect 4s infinite ease-in-out;
+}
+
+.mursalin::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid rgba(230, 140, 93, 0.5);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mursalin.playing::after {
+  opacity: 1;
+  animation: waveEffect 6s infinite ease-in-out;
+}
+
+.mursalin:hover::after {
+  opacity: 1;
+  animation: waveEffect 6s infinite ease-in-out;
+}
+
+/* Keyframes for wave effect */
+@keyframes waveEffect {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2); 
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Style the play/pause button */
+#playPauseBtn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: rgba(230, 140, 93, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  opacity: 0; 
+}
+
+.mursalin:hover #playPauseBtn {
+  opacity: 1;
+}
+
+#playPauseBtn:hover {
+  background: rgba(255, 69, 58, 0.8);
+}
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const mursalinImage = document.getElementById('mursalinImage');
+  const audio = document.getElementById('myAudio');
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  let isPlaying = false;
+
+  function toggleAudio() {
+    if (isPlaying) {
+      audio.pause();
+      mursalinImage.classList.remove('playing'); 
+      playPauseBtn.innerHTML = '▶';  
+    } else {
+      audio.play();
+      mursalinImage.classList.add('playing');  
+      playPauseBtn.innerHTML = '❚❚';  
+    }
+    isPlaying = !isPlaying;  
+  }
+
+  playPauseBtn.addEventListener('click', (e) => {
+    e.stopPropagation();  
+    toggleAudio();
+  });
+
+  // Stop glowing when audio ends
+  audio.addEventListener('ended', function() {
+    mursalinImage.classList.remove('playing');  
+    playPauseBtn.innerHTML = '▶';  
+    isPlaying = false;
+  });
+});
+</script><br>
+  <!-- Web Development Section -->
+  <div class="expandable-section">
+    <div class="title" data-title="Web Development">
+      <i class="fa-solid fa-laptop-code"></i>
+      <strong>Web Development</strong>
+    </div>
+    <div class="details">
+      <p>I specialize in building responsive and static websites using HTML, CSS, and JavaScript. My focus is on delivering clean, user-friendly designs. Additionally, I am expanding my expertise into dynamic website development, integrating databases to create more interactive and functional web experiences.</p>
+    </div>
+  </div>
+
+  <!-- Creative Design Section -->
+  <div class="expandable-section">
+    <div class="title" data-title="Creative Design">
+      <i class="fa-solid fa-palette"></i>
+      <strong>Creative Design</strong>
+    </div>
+    <div class="details">
+      <p>I have a passion for creative design, ensuring that every website or product I build is visually appealing and intuitive. My design philosophy revolves around user-centric interfaces that enhance the overall experience.</p>
+    </div>
+  </div>
+
+  <!-- Continuous Learning Section -->
+  <div class="expandable-section">
+    <div class="title" data-title="Continuous Learning">
+      <i class="fa-solid fa-book-open"></i>
+      <strong>Continuous Learning</strong>
+    </div>
+    <div class="details">
+      <p>Learning is a lifelong journey for me. I constantly explore new technologies, frameworks, and programming languages to stay updated in the rapidly changing world of tech. I'm also diving into databases like MySQL and MongoDB, enhancing my skills in backend development. Currently, I’m getting familiar with Python and using it to build Discord bots with the Discord.py library, integrating databases for better functionality and data management.</p>
+    </div>
+  </div>
+
+  <!-- Personal Growth Section -->
+  <div class="expandable-section">
+    <div class="title" data-title="Personal Growth">
+      <i class="fa-solid fa-seedling"></i>
+      <strong>Personal Growth</strong>
+    </div>
+    <div class="details">
+      <p>I believe in constantly evolving both personally and professionally. Through every project and challenge, I aim to grow as a developer and as a person, always striving to do better than before.</p>
+      <blockquote><strong>“If you don't sacrifice for what you want, what you want becomes the sacrifice.” – Tony Robbins</strong></blockquote>
+    </div>
+  </div>
+  <style>
+    /* Container for expandable sections */
+.expandable-section {
+  margin: 20px 0;
+  border: 2px solid #e6b980;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f4e5cd;
+  transition: background-color 0.5s ease;
+  position: relative;
+}
+
+.title i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #007bff; 
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  background-color: #ffeaa7;
+}
+
+.title:hover i {
+  color: #e17055; 
+}
+
+.details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 15px;
+  transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
+}
+
+.expandable-section.open .details {
+  max-height: 1000px; 
+  opacity: 1;
+  padding: 10px 15px;
+  transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
+}
+
+.details p, .details blockquote {
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+blockquote {
+  font-style: italic;
+  margin-top: 10px;
+  color: #6c757d;
+  border-left: 5px solid #007bff;
+  padding-left: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Customizing Icons for Each Title */
+[data-title="Web Development"] i {
+  color: #3498db;
+}
+
+[data-title="Creative Design"] i {
+  color: #e74c3c;
+}
+
+[data-title="Continuous Learning"] i {
+  color: #f39c12;
+}
+
+[data-title="Personal Growth"] i {
+  color: #2ecc71;
+}
+
+.expandable-section:hover .title {
+  animation: pulseTitle 0.5s forwards;
+}
+
+@keyframes pulseTitle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  </style>
+  <script>
+    document.querySelectorAll('.expandable-section').forEach(section => {
+  section.addEventListener('click', () => {
+    section.classList.toggle('open');
+
+    document.querySelectorAll('.expandable-section').forEach(otherSection => {
+      if (otherSection !== section) {
+        otherSection.classList.remove('open');
+      }
+    });
+  });
+});
+  </script>
+<style>
+  h2 {
+  font-weight: 700;
+  color: #212529; 
+  margin-bottom: 10px;
+}
+h2:hover {
+  color: #319694; 
+}
+
+p {
+  font-size: 18px;
+  color: #495057; 
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  transition: color 0.2s; 
+}
+
+.icon-1 i {
+  color: #007bff; 
+}
+
+.icon-2 i {
+  color: #6610f2; 
+}
+
+.icon-3 i {
+  color: #6f42c1; 
+}
+
+.icon-4 i {
+  color: #e83e8c; 
+}
+
+.icon-1:hover i {
+  color: #0056b3; 
+}
+
+.icon-2:hover i {
+  color: #5c1ac3; 
+}
+
+.icon-3:hover i {
+  color: #5c1ac3; 
+}
+
+.icon-4:hover i {
+  color: #c51a7a; 
+}
+
+li:hover {
+  color: #337ab7; 
+}
+</style>
+   <div class="social-buttons">
+    <a href="https://www.facebook.com/mdmursalin.276?mibextid=ZbWKwL" target="_blank" class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i><span>Facebook</span>
+    </a>
+    <a href="https://x.com/mdmursalin276" target="_blank" class="social-btn twitter">
+      <i class="fa-brands fa-x-twitter"></i><span>Twitter</span>
+    </a>
+    <a href="https://wa.me/+8801400124228?text=Hello" target="_blank" class="social-btn WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+    </a>
+    <a href="https://github.com/Mursalin276" target="_blank" class="social-btn github">
+        <i class="fab fa-github"></i><span>GitHub</span>
+    </a>
+</div>
+    </section>
+<section id="resume" class="glowing-border-box">
+  <h2><u>Resume</u></h2>
+  <h3><u>Skills</u></h3>
+
+  <!-- Web Development Skill -->
+  <div class="expandable-skill">
+    <div class="skill-title" data-title="Web Development">
+      <i class="fa-solid fa-code"></i>
+      <strong>Web Development</strong>
+    </div>
+    <div class="skill-details">
+      <p>Experienced in building responsive websites using modern web technologies.</p>
+      <div class="skill-badges">
+        <span class="skill-badge html">HTML</span>
+        <span class="skill-badge css">CSS</span>
+        <span class="skill-badge javascript">JavaScript</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Problem Solving Skill -->
+  <div class="expandable-skill">
+    <div class="skill-title" data-title="Problem Solving">
+      <i class="fa-solid fa-brain"></i>
+      <strong>Problem Solving</strong>
+    </div>
+    <div class="skill-details">
+      <p>Efficient in solving algorithmic and logical challenges.</p>
+      <div class="skill-badges">
+        <span class="skill-badge python">Python</span>
+        <span class="skill-badge cplusplus">JavaScript</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Collaboration Skill -->
+  <div class="expandable-skill">
+    <div class="skill-title" data-title="Team Collaboration">
+      <i class="fa-solid fa-users"></i>
+      <strong>Team Collaboration</strong>
+    </div>
+    <div class="skill-details">
+      <p>Proficient in working collaboratively and effectively with teams.</p>
+      <div class="skill-badges">
+        <span class="skill-badge github">GitHub</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Learner Skill -->
+  <div class="expandable-skill">
+    <div class="skill-title" data-title="Quick Learner">
+      <i class="fa-solid fa-rocket"></i>
+      <strong>Quick Learner</strong>
+    </div>
+    <div class="skill-details">
+      <p>Quick to adapt to new technologies and environments.</p>
+      <div class="skill-badges">
+        <span class="skill-badge adaptability">Adaptability</span>
+        <span class="skill-badge learning">Continuous Learning</span>
+      </div>
+    </div>
+  </div>
+  <style>
+.expandable-skill {
+  margin: 20px 0;
+  border: 2px solid #e6b980;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.skill-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f4e5cd;
+  transition: background-color 0.5s ease;
+  position: relative;
+}
+
+.skill-title i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #007bff; 
+  transition: color 0.3s ease;
+}
+
+.skill-title:hover {
+  background-color: #ffeaa7;
+}
+
+.skill-title:hover i {
+  color: #e17055; 
+}
+
+.skill-details {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
+}
+
+.expandable-skill.open .skill-details {
+  max-height: 1000px; 
+  opacity: 1;
+  padding: 10px 15px;
+}
+
+.skill-details p {
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.skill-badges {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.skill-badge {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #3498db;
+  color: white;
+  border-radius: 15px;
+}
+
+/* Badge Colors */
+.skill-badge.html { background-color: #e34c26; }    /* HTML */
+.skill-badge.css { background-color: #2965f1; }     /* CSS */
+.skill-badge.javascript { background-color: #f0db4f; color: #323330; } /* JavaScript */
+.skill-badge.python { background-color: #306998; }  /* Python */
+.skill-badge.cplusplus { background-color: #00599C; } /* C++ */
+.skill-badge.github { background-color: #333; }     /* GitHub */
+.skill-badge.adaptability { background-color: #27ae60; } /* Adaptability */
+.skill-badge.learning { background-color: #e67e22; } /* Continuous Learning */
+
+/* Hover Effect Animation */
+.expandable-skill:hover .skill-title {
+  animation: pulseSkillTitle 0.5s forwards;
+}
+
+@keyframes pulseSkillTitle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design for Skills */
+@media (max-width: 768px) {
+  .expandable-skill {
+    flex-direction: column;
+  }
+
+  .skill-details {
+    font-size: 0.85rem;
+  }
+}
+  </style>
+  <script>
+    document.querySelectorAll('.expandable-skill').forEach(skill => {
+  skill.addEventListener('click', () => {
+    skill.classList.toggle('open');
+
+    document.querySelectorAll('.expandable-skill').forEach(otherSkill => {
+      if (otherSkill !== skill) {
+        otherSkill.classList.remove('open');
+      }
+    });
+  });
+});
+  </script>
+</section>
+    <section id="projects" class="glowing-border-box">
+  <h2><u>Projects</u></h2>
+
+  <!-- Personal Portfolio Project -->
+  <div class="expandable-project">
+    <div class="project-title" data-title="Personal Portfolio Website">
+      <i class="fa-solid fa-globe"></i>
+      <strong>Personal Portfolio Website</strong>
+    </div>
+    <div class="project-details">
+      <p>A responsive website showcasing my skills and projects. Built with modern web technologies.</p>
+      <ul>
+        <li><strong>Technologies Used:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Features:</strong> Responsive design, animations, interactive sections.</li>
+        <li><strong>Purpose:</strong> To create a personal brand and showcase portfolio.</li>
+        <li><strong>Learning Outcome:</strong> Improved my skills in front-end development and animations.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Discord Multi-Purpose Bot -->
+  <div class="expandable-project">
+    <div class="project-title" data-title="Discord Bot">
+      <i class="fa-brands fa-discord"></i>
+      <strong>Discord Multi-Purpose Bot</strong>
+    </div>
+    <div class="project-details">
+      <p>I’m building a multi-purpose Discord bot using the discord.py library and a MongoDB Atlas database. The bot will handle a variety of tasks such as moderation, custom commands, user engagement, and server management. By integrating with MongoDB, the bot can store user data and preferences for personalized interactions. This project aims to provide a seamless and interactive experience for Discord server admins and members.</p>
+    </div>
+  </div>
+  <style>
+    /* Container for expandable projects */
+.expandable-project {
+  margin: 20px 0;
+  border: 2px solid #e6b980;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f4e5cd;
+  transition: background-color 0.5s ease;
+  position: relative;
+}
+
+.project-title i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #007bff; 
+  transition: color 0.3s ease;
+}
+
+.project-title:hover {
+  background-color: #ffeaa7;
+}
+
+.project-title:hover i {
+  color: #e17055; 
+}
+
+.project-details {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
+}
+
+.expandable-project.open .project-details {
+  max-height: 1000px; 
+  opacity: 1;
+  padding: 10px 15px;
+}
+
+.project-details p, .project-details ul {
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.project-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-details li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Hover Effect Animation */
+.expandable-project:hover .project-title {
+  animation: pulseProjectTitle 0.5s forwards;
+}
+
+@keyframes pulseProjectTitle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .expandable-project {
+    flex-direction: column;
+  }
+
+  .project-details {
+    font-size: 0.85rem;
+  }
+}
+  </style>
+  <script>
+    document.querySelectorAll('.expandable-project').forEach(project => {
+  project.addEventListener('click', () => {
+    project.classList.toggle('open');
+
+    document.querySelectorAll('.expandable-project').forEach(otherProject => {
+      if (otherProject !== project) {
+        otherProject.classList.remove('open');
+      }
+    });
+  });
+});
+  </script>
+</section>
+<section id="services" class="glowing-border-box">
+  <h2><u>Our Services</u></h2>
+  <p>We craft your digital presence with precision, from dynamic animations to professional designs. Explore our services below:</p>
+
+  <!-- Animated Backgrounds Service -->
+  <div class="expandable-service">
+    <div class="service-title" data-title="Animated Backgrounds">
+      <i class="fa-solid fa-video"></i>
+      <strong>Animated Backgrounds</strong>
+    </div>
+    <div class="service-details">
+      <p>Create visually stunning animated backgrounds for websites, adding life to your digital presence.</p>
+      <ul>
+        <li><strong>Technologies Used:</strong> CSS, JavaScript, WebGL</li>
+        <li><strong>Purpose:</strong> Enhance the visual appeal of your website by incorporating dynamic, moving backgrounds that capture user attention.</li>
+        <li><strong>Key Benefit:</strong> Improves user engagement and makes your site stand out.</li>
+      </ul>
+      <div class="badges">
+        <span class="service-badge design">Design</span>
+        <span class="service-badge animation">Animation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Motion Backgrounds Service -->
+  <div class="expandable-service">
+    <div class="service-title" data-title="Motion Backgrounds">
+      <i class="fa-solid fa-film"></i>
+      <strong>Motion Backgrounds</strong>
+    </div>
+    <div class="service-details">
+      <p>Expertly crafted motion backgrounds to enhance your site's user engagement and visual experience.</p>
+      <ul>
+        <li><strong>Technologies Used:</strong> CSS, After Effects, Lottie</li>
+        <li><strong>Purpose:</strong> Create subtle but effective motion graphics that elevate the user experience without overwhelming the content.</li>
+        <li><strong>Key Benefit:</strong> Drives better engagement by using movement to guide users’ attention.</li>
+      </ul>
+      <div class="badges">
+        <span class="service-badge animation">Animation</span>
+        <span class="service-badge visual">Visual Effects</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logo Design Service -->
+  <div class="expandable-service">
+    <div class="service-title" data-title="Logo Design">
+      <i class="fa-solid fa-paint-brush"></i>
+      <strong>Logo Design</strong>
+    </div>
+    <div class="service-details">
+      <p>Professional logo design services that represent your brand identity and values.</p>
+      <ul>
+        <li><strong>Technologies Used:</strong> Adobe Illustrator, Figma</li>
+        <li><strong>Purpose:</strong> Create a unique and memorable logo that aligns with your brand’s identity and values.</li>
+        <li><strong>Key Benefit:</strong> A strong logo builds brand recognition and credibility.</li>
+      </ul>
+      <div class="badges">
+        <span class="service-badge branding">Branding</span>
+        <span class="service-badge design">Design</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner Design Service -->
+  <div class="expandable-service">
+    <div class="service-title" data-title="Banner Design">
+      <i class="fa-solid fa-bullhorn"></i>
+      <strong>Banner Design</strong>
+    </div>
+    <div class="service-details">
+      <p>Design eye-catching banners to elevate your marketing and promotional campaigns.</p>
+      <ul>
+        <li><strong>Technologies Used:</strong> Photoshop, Figma</li>
+        <li><strong>Purpose:</strong> Create visually appealing banners that drive conversions and improve brand visibility.</li>
+        <li><strong>Key Benefit:</strong> Increases engagement with clear calls-to-action and vibrant designs.</li>
+      </ul>
+      <div class="badges">
+        <span class="service-badge marketing">Marketing</span>
+        <span class="service-badge design">Design</span>
+      </div>
+    </div>
+  </div>
+  <style>
+    /* Container for expandable services */
+.expandable-service {
+  margin: 20px 0;
+  border: 2px solid #e6b980;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.service-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f4e5cd;
+  transition: background-color 0.5s ease;
+  position: relative;
+}
+
+.service-title i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #007bff; 
+  transition: color 0.3s ease;
+}
+
+.service-title:hover {
+  background-color: #ffeaa7;
+}
+
+.service-title:hover i {
+  color: #e17055; 
+}
+
+.service-details {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
+}
+
+.expandable-service.open .service-details {
+  max-height: 1000px; 
+  opacity: 1;
+  padding: 10px 15px;
+}
+
+.service-details p, .service-details ul {
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.service-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-details li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.badges {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.service-badge {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #3498db;
+  color: white;
+  border-radius: 15px;
+}
+
+/* Badge Colors */
+.service-badge.design { background-color: #e74c3c; }
+.service-badge.animation { background-color: #f39c12; }
+.service-badge.visual { background-color: #8e44ad; }
+.service-badge.branding { background-color: #2ecc71; }
+.service-badge.marketing { background-color: #e67e22; }
+
+/* Hover Effect Animation */
+.expandable-service:hover .service-title {
+  animation: pulseServiceTitle 0.5s forwards;
+}
+
+@keyframes pulseServiceTitle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .expandable-service {
+    flex-direction: column;
+  }
+
+  .service-details {
+    font-size: 0.85rem;
+  }
+}
+  </style>
+  <script>
+    document.querySelectorAll('.expandable-service').forEach(service => {
+  service.addEventListener('click', () => {
+    service.classList.toggle('open');
+
+    document.querySelectorAll('.expandable-service').forEach(otherService => {
+      if (otherService !== service) {
+        otherService.classList.remove('open');
+      }
+    });
+  });
+});
+  </script>
+</section>
+    <!-- Contact Section -->
+<section id="contacts" class="glowing-border-box">
+    <h2><u>Contact Me</u></h2>
+    <p>I'm always excited to connect with new people and explore opportunities!</p>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/manwzdbz" method="POST">
+        <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" ">
+            <label for="name">Your Name</label>
+        </div>
+        
+        <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" ">
+            <label for="email">Your Email</label>
+        </div>
+
+        <div class="form-group">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Your Message</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <!-- Form Feedback Message -->
+    <div id="form-message" style="display: none;"></div>
+    <style>
+      /* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.form-group {
+    position: relative;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 1rem;
+    border: 2px solid rgba(230, 140, 93, 0.5);
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Floating Label */
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 1rem;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+input:focus + label,
+textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+    top: -18px;
+    left: 8px;
+    font-size: 0.8rem;
+    color: #FF5733;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #FF5733;
+}
+
+textarea {
+    resize: none; 
+}
+
+/* Submit Button Styling */
+button.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); 
+}
+
+/* Form Message Feedback */
+#form-message {
+    font-family: 'Merienda', serif;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#form-message.success {
+    color: #28a745;
+    background-color: #dff0d8;
+    border: 2px solid #28a745;
+}
+
+#form-message.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 2px solid #dc3545;
+}
+
+#form-message.sending {
+    color: #007bff;
+    background-color: #d1ecf1;
+    border: 2px solid #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        width: 100%;
+    }
+}
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    const formMessage = document.getElementById('form-message');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        submitButton.disabled = true;
+        formMessage.style.display = 'block';
+        formMessage.textContent = 'Sending...';
+        formMessage.className = 'sending';
+
+        const formData = new FormData(form);
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('POST', form.action, true);
+        xhr.setRequestHeader('Accept', 'application/json');
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    formMessage.textContent = 'Thank you! Your message has been sent.';
+                    formMessage.className = 'success';
+                    form.reset(); 
+                } else {
+                    formMessage.textContent = 'Oops! Something went wrong. Please try again.';
+                    formMessage.className = 'error';
+                }
+                submitButton.disabled = false;
+            }
+        };
+
+        // Send the form data
+        xhr.send(formData);
+    });
+});
+    </script>
+</section>
+<!-- Back button -->
+<button class="back-button"><i class="fas fa-arrow-left"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

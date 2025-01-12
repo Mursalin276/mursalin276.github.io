@@ -1321,9 +1321,28 @@ button.submit-btn:hover {
 </section>
 <!-- Back button -->
 <button class="back-button"><i class="fas fa-arrow-left"></i></button>
-<footer></footer>
+<footer>
   <p>&copy; 2023 Md. Mursalin. All rights reserved.</p>
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('footer');
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          footer.style.display = 'block';
+        } else {
+          footer.style.display = 'none';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
+</script>
     <script src="script.js"></script>
 </body>
 </html>
